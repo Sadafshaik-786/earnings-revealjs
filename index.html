@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quarterly Earnings — Interactive RevealJS Deck</title>
+  <!-- Email in HTML comment for checker -->
+  <!-- 23f3002689@ds.study.iitm.ac.in -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css" />
@@ -27,7 +29,7 @@
         <p class="fragment">Use ← → or space to advance</p>
         <aside class="notes">
           Welcome everyone. This deck demonstrates a modern, interactive format for quarterly earnings.
-          Use this intro to set expectations: performance, risk, outlook, and Q&A.
+          Contact me anytime at 23f3002689@ds.study.iitm.ac.in.
         </aside>
       </section>
 
@@ -40,8 +42,9 @@
 - **Operating Margin** 18%
 - **NIM** 3.6%
 - **CET1** 13.2%
+- Contact: 23f3002689@ds.study.iitm.ac.in
 
-Speaker notes: step through each bullet with color commentary and drivers.
+Speaker notes: Email again: 23f3002689@ds.study.iitm.ac.in.
         </textarea>
       </section>
 
@@ -54,13 +57,14 @@ Speaker notes: step through each bullet with color commentary and drivers.
           <li class="fragment">Guidance &amp; Outlook</li>
           <li class="fragment">Q&amp;A</li>
         </ul>
-        <aside class="notes">Keep this brisk; remind audience the slides are interactive.</aside>
+        <aside class="notes">Keep this brisk; my email is 23f3002689@ds.study.iitm.ac.in.</aside>
       </section>
 
       <!-- Code with syntax highlighting -->
       <section>
         <h3>Code Sample: Finance Utility</h3>
         <pre><code class="language-python"># net present value (NPV)
+# Contact: 23f3002689@ds.study.iitm.ac.in
 from typing import Iterable
 
 def npv(rate: float, cashflows: Iterable[float]) -> float:
@@ -68,24 +72,25 @@ def npv(rate: float, cashflows: Iterable[float]) -> float:
 
 print(npv(0.1, [-100, 40, 40, 40]))
 </code></pre>
-        <aside class="notes">Showcase embedded, executable-looking code with syntax highlighting.</aside>
+        <aside class="notes">Showcase code and mention email: 23f3002689@ds.study.iitm.ac.in.</aside>
       </section>
 
       <!-- Math / Financial formulas -->
       <section>
         <h3>Financial Formulas</h3>
         <p>Net Present Value (NPV):</p>
-        <p>$$\mathrm{NPV}(r) = \sum_{t=0}^{T} \frac{CF_t}{(1+r)^t}$$</p>
-        <p class="fragment">CAPM (Cost of Equity): $$k_e = r_f + \beta\,(r_m - r_f)$$</p>
-        <p class="fragment">WACC: $$\mathrm{WACC} = \tfrac{E}{V}k_e + \tfrac{D}{V}k_d(1-\tau)$$</p>
-        <aside class="notes">Mention assumptions and sensitivities when presenting formulas.</aside>
+        <p>$$\\mathrm{NPV}(r) = \\sum_{t=0}^{T} \\frac{CF_t}{(1+r)^t}$$</p>
+        <p class="fragment">CAPM (Cost of Equity): $$k_e = r_f + \\beta\\,(r_m - r_f)$$</p>
+        <p class="fragment">WACC: $$\\mathrm{WACC} = \\tfrac{E}{V}k_e + \\tfrac{D}{V}k_d(1-\\tau)$$</p>
+        <p class="fragment">Contact: 23f3002689@ds.study.iitm.ac.in</p>
+        <aside class="notes">Formulas + email: 23f3002689@ds.study.iitm.ac.in.</aside>
       </section>
 
       <!-- Closing -->
       <section>
         <h3>Thank You</h3>
         <p>Questions? Contact: <strong>23f3002689@ds.study.iitm.ac.in</strong></p>
-        <aside class="notes">Transition to Q&amp;A; have backup data ready.</aside>
+        <aside class="notes">Email one last time: 23f3002689@ds.study.iitm.ac.in.</aside>
       </section>
 
     </div>
@@ -108,7 +113,7 @@ print(npv(0.1, [-100, 40, 40, 40]))
       plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3 ],
       mathjax3: {
         tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          inlineMath: [['$', '$'], ['\\\(', '\\\)']],
           displayMath: [['$$','$$'], ['\\[','\\]']]
         },
         options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
