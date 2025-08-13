@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quarterly Earnings — Interactive RevealJS Deck</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css" />
+  <style>
+    .reveal .footer {
+      position: absolute; bottom: 12px; left: 24px; right: 24px; font-size: 16px; opacity: .6;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Title / Intro -->
+      <section>
+        <h2>Q2 Earnings Report — Interactive Deck</h2>
+        <p>Technical Consultant, Major Financial Institution</p>
+        <p>Email: <strong>23f3002689@ds.study.iitm.ac.in</strong></p>
+        <p class="fragment">Built with <em>RevealJS</em> and <em>GitHub Pages</em></p>
+        <p class="fragment">Use ← → or space to advance</p>
+        <aside class="notes">
+          Welcome everyone. This deck demonstrates a modern, interactive format for quarterly earnings.
+          Use this intro to set expectations: performance, risk, outlook, and Q&A.
+        </aside>
+      </section>
+
+      <!-- Markdown slide -->
+      <section data-markdown>
+        <textarea data-template>
+## Highlights (Markdown)
+
+- **Revenue** ↑ 12% YoY (illustrative)
+- **Operating Margin** 18%
+- **NIM** 3.6%
+- **CET1** 13.2%
+
+Speaker notes: step through each bullet with color commentary and drivers.
+        </textarea>
+      </section>
+
+      <!-- Agenda with fragments -->
+      <section>
+        <h3>Agenda</h3>
+        <ul>
+          <li class="fragment">Performance &amp; Segment Trends</li>
+          <li class="fragment">Risk &amp; Capital</li>
+          <li class="fragment">Guidance &amp; Outlook</li>
+          <li class="fragment">Q&amp;A</li>
+        </ul>
+        <aside class="notes">Keep this brisk; remind audience the slides are interactive.</aside>
+      </section>
+
+      <!-- Code with syntax highlighting -->
+      <section>
+        <h3>Code Sample: Finance Utility</h3>
+        <pre><code class="language-python"># net present value (NPV)
+from typing import Iterable
+
+def npv(rate: float, cashflows: Iterable[float]) -> float:
+    return sum(cf / ((1.0 + rate) ** t) for t, cf in enumerate(cashflows))
+
+print(npv(0.1, [-100, 40, 40, 40]))
+</code></pre>
+        <aside class="notes">Showcase embedded, executable-looking code with syntax highlighting.</aside>
+      </section>
+
+      <!-- Math / Financial formulas -->
+      <section>
+        <h3>Financial Formulas</h3>
+        <p>Net Present Value (NPV):</p>
+        <p>$$\mathrm{NPV}(r) = \sum_{t=0}^{T} \frac{CF_t}{(1+r)^t}$$</p>
+        <p class="fragment">CAPM (Cost of Equity): $$k_e = r_f + \beta\,(r_m - r_f)$$</p>
+        <p class="fragment">WACC: $$\mathrm{WACC} = \tfrac{E}{V}k_e + \tfrac{D}{V}k_d(1-\tau)$$</p>
+        <aside class="notes">Mention assumptions and sensitivities when presenting formulas.</aside>
+      </section>
+
+      <!-- Closing -->
+      <section>
+        <h3>Thank You</h3>
+        <p>Questions? Contact: <strong>23f3002689@ds.study.iitm.ac.in</strong></p>
+        <aside class="notes">Transition to Q&amp;A; have backup data ready.</aside>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Quarterly Earnings — Interactive Deck</span>
+    <span>23f3002689@ds.study.iitm.ac.in</span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3 ],
+      mathjax3: {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[','\\]']]
+        },
+        options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+      }
+    });
+  </script>
+</body>
+</html>
